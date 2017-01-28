@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C0A3139B586BBA07F5C2AEB /* Pods_clstm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407754C9A4BC49B1DB363102 /* Pods_clstm.framework */; };
+		54363FDE1E3AB12A00CC1CF9 /* deskew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54363FDC1E3AB12A00CC1CF9 /* deskew.cpp */; };
+		545F7AC41E370F00009A4464 /* batches.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AAE1E370F00009A4464 /* batches.cc */; };
+		545F7AC51E370F00009A4464 /* clstm_compute_cuda.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AAF1E370F00009A4464 /* clstm_compute_cuda.cc */; };
+		545F7AC61E370F00009A4464 /* clstm_compute.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB01E370F00009A4464 /* clstm_compute.cc */; };
+		545F7AC71E370F00009A4464 /* clstm_prefab.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB11E370F00009A4464 /* clstm_prefab.cc */; };
+		545F7AC81E370F00009A4464 /* clstm_proto.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB21E370F00009A4464 /* clstm_proto.cc */; };
+		545F7AC91E370F00009A4464 /* clstm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB31E370F00009A4464 /* clstm.cc */; };
+		545F7ACA1E370F00009A4464 /* clstm.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB41E370F00009A4464 /* clstm.pb.cc */; };
+		545F7ACB1E370F00009A4464 /* clstmfilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB51E370F00009A4464 /* clstmfilter.cc */; };
+		545F7ACC1E370F00009A4464 /* clstmfiltertrain.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB61E370F00009A4464 /* clstmfiltertrain.cc */; };
+		545F7ACD1E370F00009A4464 /* clstmocr.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB71E370F00009A4464 /* clstmocr.cc */; };
+		545F7ACE1E370F00009A4464 /* clstmocrtrain.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB81E370F00009A4464 /* clstmocrtrain.cc */; };
+		545F7ACF1E370F00009A4464 /* ctc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AB91E370F00009A4464 /* ctc.cc */; };
+		545F7AD01E370F00009A4464 /* extras.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7ABA1E370F00009A4464 /* extras.cc */; };
+		545F7AD11E370F00009A4464 /* tensor.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7ABB1E370F00009A4464 /* tensor.cc */; };
+		545F7AD21E370F00009A4464 /* test-2d.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7ABC1E370F00009A4464 /* test-2d.cc */; };
+		545F7AD31E370F00009A4464 /* test-batchlstm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7ABD1E370F00009A4464 /* test-batchlstm.cc */; };
+		545F7AD41E370F00009A4464 /* test-cderiv.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7ABE1E370F00009A4464 /* test-cderiv.cc */; };
+		545F7AD51E370F00009A4464 /* test-ctc.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7ABF1E370F00009A4464 /* test-ctc.cc */; };
+		545F7AD61E370F00009A4464 /* test-deriv.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AC01E370F00009A4464 /* test-deriv.cc */; };
+		545F7AD71E370F00009A4464 /* test-edit.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AC11E370F00009A4464 /* test-edit.cc */; };
+		545F7AD81E370F00009A4464 /* test-lstm.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AC21E370F00009A4464 /* test-lstm.cc */; };
+		545F7AD91E370F00009A4464 /* test-lstm2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 545F7AC31E370F00009A4464 /* test-lstm2.cc */; };
+		549195241E37534A004D76C2 /* clstmocr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 549195221E37534A004D76C2 /* clstmocr.cpp */; };
+		54B323F21E372A040083F931 /* clstm.proto in Sources */ = {isa = PBXBuildFile; fileRef = 54B323F11E3729FA0083F931 /* clstm.proto */; };
+		54F403EE1E3AB9980058D0DB /* liblept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F403EB1E3AB9980058D0DB /* liblept.a */; };
+		54F403EF1E3AB9980058D0DB /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F403EC1E3AB9980058D0DB /* libpng.a */; };
+		54F403F01E3AB9980058D0DB /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F403ED1E3AB9980058D0DB /* libprotobuf.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		54B323F31E372A190083F931 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.proto";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(SRCROOT)/clstm/$(INPUT_FILE_BASE).pb.cc",
+				"$(SRCROOT)/clstm/$(INPUT_FILE_BASE).pb.h",
+			);
+			script = "cd ${INPUT_FILE_DIR}\n${SRCROOT}/clstm/bin/protoc --proto_path=${INPUT_FILE_DIR} ${INPUT_FILE_PATH} --cpp_out=${SRCROOT}/clstm";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		545F7A941E370E4C009A4464 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		239156FD82A832A008706D3A /* Pods-clstm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clstm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-clstm/Pods-clstm.debug.xcconfig"; sourceTree = "<group>"; };
+		407754C9A4BC49B1DB363102 /* Pods_clstm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_clstm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54363FDC1E3AB12A00CC1CF9 /* deskew.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deskew.cpp; sourceTree = "<group>"; };
+		54363FDD1E3AB12A00CC1CF9 /* deskew.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = deskew.hpp; sourceTree = "<group>"; };
+		545F7A961E370E4C009A4464 /* libclstm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libclstm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		545F7AA21E370F00009A4464 /* batches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = batches.h; sourceTree = "<group>"; };
+		545F7AA31E370F00009A4464 /* clstm_compute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clstm_compute.h; sourceTree = "<group>"; };
+		545F7AA41E370F00009A4464 /* clstm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clstm.h; sourceTree = "<group>"; };
+		545F7AA51E370F00009A4464 /* clstm.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clstm.pb.h; sourceTree = "<group>"; };
+		545F7AA61E370F00009A4464 /* clstmhl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clstmhl.h; sourceTree = "<group>"; };
+		545F7AA71E370F00009A4464 /* enroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enroll.h; sourceTree = "<group>"; };
+		545F7AA81E370F00009A4464 /* extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extras.h; sourceTree = "<group>"; };
+		545F7AA91E370F00009A4464 /* numpyarray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numpyarray.h; sourceTree = "<group>"; };
+		545F7AAA1E370F00009A4464 /* pstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pstring.h; sourceTree = "<group>"; };
+		545F7AAB1E370F00009A4464 /* pytensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pytensor.h; sourceTree = "<group>"; };
+		545F7AAC1E370F00009A4464 /* tensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tensor.h; sourceTree = "<group>"; };
+		545F7AAD1E370F00009A4464 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		545F7AAE1E370F00009A4464 /* batches.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = batches.cc; sourceTree = "<group>"; };
+		545F7AAF1E370F00009A4464 /* clstm_compute_cuda.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstm_compute_cuda.cc; sourceTree = "<group>"; };
+		545F7AB01E370F00009A4464 /* clstm_compute.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstm_compute.cc; sourceTree = "<group>"; };
+		545F7AB11E370F00009A4464 /* clstm_prefab.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstm_prefab.cc; sourceTree = "<group>"; };
+		545F7AB21E370F00009A4464 /* clstm_proto.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstm_proto.cc; sourceTree = "<group>"; };
+		545F7AB31E370F00009A4464 /* clstm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstm.cc; sourceTree = "<group>"; };
+		545F7AB41E370F00009A4464 /* clstm.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstm.pb.cc; sourceTree = "<group>"; };
+		545F7AB51E370F00009A4464 /* clstmfilter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstmfilter.cc; sourceTree = "<group>"; };
+		545F7AB61E370F00009A4464 /* clstmfiltertrain.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstmfiltertrain.cc; sourceTree = "<group>"; };
+		545F7AB71E370F00009A4464 /* clstmocr.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstmocr.cc; sourceTree = "<group>"; };
+		545F7AB81E370F00009A4464 /* clstmocrtrain.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstmocrtrain.cc; sourceTree = "<group>"; };
+		545F7AB91E370F00009A4464 /* ctc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ctc.cc; sourceTree = "<group>"; };
+		545F7ABA1E370F00009A4464 /* extras.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extras.cc; sourceTree = "<group>"; };
+		545F7ABB1E370F00009A4464 /* tensor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tensor.cc; sourceTree = "<group>"; };
+		545F7ABC1E370F00009A4464 /* test-2d.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-2d.cc"; sourceTree = "<group>"; };
+		545F7ABD1E370F00009A4464 /* test-batchlstm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-batchlstm.cc"; sourceTree = "<group>"; };
+		545F7ABE1E370F00009A4464 /* test-cderiv.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-cderiv.cc"; sourceTree = "<group>"; };
+		545F7ABF1E370F00009A4464 /* test-ctc.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-ctc.cc"; sourceTree = "<group>"; };
+		545F7AC01E370F00009A4464 /* test-deriv.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-deriv.cc"; sourceTree = "<group>"; };
+		545F7AC11E370F00009A4464 /* test-edit.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-edit.cc"; sourceTree = "<group>"; };
+		545F7AC21E370F00009A4464 /* test-lstm.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-lstm.cc"; sourceTree = "<group>"; };
+		545F7AC31E370F00009A4464 /* test-lstm2.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "test-lstm2.cc"; sourceTree = "<group>"; };
+		545F7ADC1E371101009A4464 /* macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		549195221E37534A004D76C2 /* clstmocr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clstmocr.cpp; sourceTree = "<group>"; };
+		549195231E37534A004D76C2 /* clstmocr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = clstmocr.hpp; sourceTree = "<group>"; };
+		54B323F11E3729FA0083F931 /* clstm.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clstm.proto; sourceTree = "<group>"; };
+		54F403E81E3AB9520058D0DB /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
+		54F403E91E3AB9520058D0DB /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
+		54F403EA1E3AB9520058D0DB /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		54F403EB1E3AB9980058D0DB /* liblept.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblept.a; path = clstm/lib/liblept.a; sourceTree = "<group>"; };
+		54F403EC1E3AB9980058D0DB /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng.a; path = clstm/lib/libpng.a; sourceTree = "<group>"; };
+		54F403ED1E3AB9980058D0DB /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = clstm/lib/libprotobuf.a; sourceTree = "<group>"; };
+		DF9D10E86DB0F6B8943BC213 /* Pods-clstm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-clstm.release.xcconfig"; path = "Pods/Target Support Files/Pods-clstm/Pods-clstm.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		545F7A931E370E4C009A4464 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54F403EE1E3AB9980058D0DB /* liblept.a in Frameworks */,
+				54F403EF1E3AB9980058D0DB /* libpng.a in Frameworks */,
+				54F403F01E3AB9980058D0DB /* libprotobuf.a in Frameworks */,
+				2C0A3139B586BBA07F5C2AEB /* Pods_clstm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EB16BBC6A2FEB0CC28F81B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54F403EB1E3AB9980058D0DB /* liblept.a */,
+				54F403EC1E3AB9980058D0DB /* libpng.a */,
+				54F403ED1E3AB9980058D0DB /* libprotobuf.a */,
+				407754C9A4BC49B1DB363102 /* Pods_clstm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24C602A817297FA305F73DB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				239156FD82A832A008706D3A /* Pods-clstm.debug.xcconfig */,
+				DF9D10E86DB0F6B8943BC213 /* Pods-clstm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		545F7A8D1E370E4C009A4464 = {
+			isa = PBXGroup;
+			children = (
+				545F7A981E370E4C009A4464 /* clstm */,
+				545F7A971E370E4C009A4464 /* Products */,
+				24C602A817297FA305F73DB7 /* Pods */,
+				0EB16BBC6A2FEB0CC28F81B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		545F7A971E370E4C009A4464 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				545F7A961E370E4C009A4464 /* libclstm.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		545F7A981E370E4C009A4464 /* clstm */ = {
+			isa = PBXGroup;
+			children = (
+				54F403E81E3AB9520058D0DB /* bin */,
+				54F403E91E3AB9520058D0DB /* include */,
+				54F403EA1E3AB9520058D0DB /* lib */,
+				54B323F11E3729FA0083F931 /* clstm.proto */,
+				545F7AA21E370F00009A4464 /* batches.h */,
+				545F7AA31E370F00009A4464 /* clstm_compute.h */,
+				545F7AA41E370F00009A4464 /* clstm.h */,
+				545F7AA51E370F00009A4464 /* clstm.pb.h */,
+				545F7AA61E370F00009A4464 /* clstmhl.h */,
+				545F7AA71E370F00009A4464 /* enroll.h */,
+				545F7AA81E370F00009A4464 /* extras.h */,
+				545F7AA91E370F00009A4464 /* numpyarray.h */,
+				545F7AAA1E370F00009A4464 /* pstring.h */,
+				545F7AAB1E370F00009A4464 /* pytensor.h */,
+				545F7AAC1E370F00009A4464 /* tensor.h */,
+				545F7AAD1E370F00009A4464 /* utils.h */,
+				545F7AAE1E370F00009A4464 /* batches.cc */,
+				545F7AAF1E370F00009A4464 /* clstm_compute_cuda.cc */,
+				545F7AB01E370F00009A4464 /* clstm_compute.cc */,
+				545F7AB11E370F00009A4464 /* clstm_prefab.cc */,
+				545F7AB21E370F00009A4464 /* clstm_proto.cc */,
+				545F7AB31E370F00009A4464 /* clstm.cc */,
+				545F7AB41E370F00009A4464 /* clstm.pb.cc */,
+				545F7AB51E370F00009A4464 /* clstmfilter.cc */,
+				545F7AB61E370F00009A4464 /* clstmfiltertrain.cc */,
+				545F7AB71E370F00009A4464 /* clstmocr.cc */,
+				545F7AB81E370F00009A4464 /* clstmocrtrain.cc */,
+				545F7AB91E370F00009A4464 /* ctc.cc */,
+				545F7ABA1E370F00009A4464 /* extras.cc */,
+				545F7ABB1E370F00009A4464 /* tensor.cc */,
+				545F7ABC1E370F00009A4464 /* test-2d.cc */,
+				545F7ABD1E370F00009A4464 /* test-batchlstm.cc */,
+				545F7ABE1E370F00009A4464 /* test-cderiv.cc */,
+				545F7ABF1E370F00009A4464 /* test-ctc.cc */,
+				545F7AC01E370F00009A4464 /* test-deriv.cc */,
+				545F7AC11E370F00009A4464 /* test-edit.cc */,
+				545F7AC21E370F00009A4464 /* test-lstm.cc */,
+				545F7AC31E370F00009A4464 /* test-lstm2.cc */,
+				545F7ADC1E371101009A4464 /* macros.h */,
+				549195221E37534A004D76C2 /* clstmocr.cpp */,
+				549195231E37534A004D76C2 /* clstmocr.hpp */,
+				54363FDC1E3AB12A00CC1CF9 /* deskew.cpp */,
+				54363FDD1E3AB12A00CC1CF9 /* deskew.hpp */,
+			);
+			path = clstm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		545F7A951E370E4C009A4464 /* clstm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545F7A9F1E370E4C009A4464 /* Build configuration list for PBXNativeTarget "clstm" */;
+			buildPhases = (
+				054AD7568756E8BDD386CE2E /* [CP] Check Pods Manifest.lock */,
+				545F7A921E370E4C009A4464 /* Sources */,
+				545F7A931E370E4C009A4464 /* Frameworks */,
+				545F7A941E370E4C009A4464 /* CopyFiles */,
+				2421D2E2E41D06230D58C0EC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+				54B323F31E372A190083F931 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = clstm;
+			productName = clstm;
+			productReference = 545F7A961E370E4C009A4464 /* libclstm.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		545F7A8E1E370E4C009A4464 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jeffrey Rafter";
+				TargetAttributes = {
+					545F7A951E370E4C009A4464 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B42KF28245;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 545F7A911E370E4C009A4464 /* Build configuration list for PBXProject "clstm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 545F7A8D1E370E4C009A4464;
+			productRefGroup = 545F7A971E370E4C009A4464 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				545F7A951E370E4C009A4464 /* clstm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		054AD7568756E8BDD386CE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2421D2E2E41D06230D58C0EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-clstm/Pods-clstm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		545F7A921E370E4C009A4464 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B323F21E372A040083F931 /* clstm.proto in Sources */,
+				545F7AD91E370F00009A4464 /* test-lstm2.cc in Sources */,
+				545F7ACF1E370F00009A4464 /* ctc.cc in Sources */,
+				545F7AD41E370F00009A4464 /* test-cderiv.cc in Sources */,
+				549195241E37534A004D76C2 /* clstmocr.cpp in Sources */,
+				545F7AC61E370F00009A4464 /* clstm_compute.cc in Sources */,
+				545F7AD01E370F00009A4464 /* extras.cc in Sources */,
+				545F7AC91E370F00009A4464 /* clstm.cc in Sources */,
+				545F7AD31E370F00009A4464 /* test-batchlstm.cc in Sources */,
+				545F7AC81E370F00009A4464 /* clstm_proto.cc in Sources */,
+				545F7AD61E370F00009A4464 /* test-deriv.cc in Sources */,
+				545F7ACE1E370F00009A4464 /* clstmocrtrain.cc in Sources */,
+				54363FDE1E3AB12A00CC1CF9 /* deskew.cpp in Sources */,
+				545F7AD81E370F00009A4464 /* test-lstm.cc in Sources */,
+				545F7ACB1E370F00009A4464 /* clstmfilter.cc in Sources */,
+				545F7AC71E370F00009A4464 /* clstm_prefab.cc in Sources */,
+				545F7AD21E370F00009A4464 /* test-2d.cc in Sources */,
+				545F7AC51E370F00009A4464 /* clstm_compute_cuda.cc in Sources */,
+				545F7ACA1E370F00009A4464 /* clstm.pb.cc in Sources */,
+				545F7ACC1E370F00009A4464 /* clstmfiltertrain.cc in Sources */,
+				545F7AD71E370F00009A4464 /* test-edit.cc in Sources */,
+				545F7ACD1E370F00009A4464 /* clstmocr.cc in Sources */,
+				545F7AD11E370F00009A4464 /* tensor.cc in Sources */,
+				545F7AD51E370F00009A4464 /* test-ctc.cc in Sources */,
+				545F7AC41E370F00009A4464 /* batches.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		545F7A9D1E370E4C009A4464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos10.2;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		545F7A9E1E370E4C009A4464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos10.2;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		545F7AA01E370E4C009A4464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239156FD82A832A008706D3A /* Pods-clstm.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B42KF28245;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(PROJECT_DIR)/clstm/include",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/clstm/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		545F7AA11E370E4C009A4464 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9D10E86DB0F6B8943BC213 /* Pods-clstm.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B42KF28245;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/clstm/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		545F7A911E370E4C009A4464 /* Build configuration list for PBXProject "clstm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545F7A9D1E370E4C009A4464 /* Debug */,
+				545F7A9E1E370E4C009A4464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545F7A9F1E370E4C009A4464 /* Build configuration list for PBXNativeTarget "clstm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545F7AA01E370E4C009A4464 /* Debug */,
+				545F7AA11E370E4C009A4464 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 545F7A8E1E370E4C009A4464 /* Project object */;
+}
