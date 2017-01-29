@@ -13,6 +13,6 @@
 
 // Deskews the image specified by filename,
 // extracts the first segment, then overwrites the file
-void deskew(const char * filename);
+void preProcessMiddleSegment(const char * input_filename, const char * output_filename);
 
 #endif /* deskew_hpp */

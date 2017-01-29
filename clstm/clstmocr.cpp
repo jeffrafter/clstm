@@ -36,7 +36,7 @@ extern "C" const char * clstm_recognize(const char * model_file_name, const char
     cpu_load_time = ((double) (end - start)) / CLOCKS_PER_SEC;
     
     // Deskew and grab the center line
-    deskew(image_file_name);
+    preProcessMiddleSegment(image_file_name, image_file_name);
     
     // Read the image
     start = clock();
